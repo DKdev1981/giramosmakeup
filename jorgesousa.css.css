@@ -1,0 +1,91 @@
+html {
+padding: 0;
+margin: 0;
+}
+
+body {
+    
+    
+    
+    
+}
+
+#skelet {
+    text-align: center;
+    background-color: rgb(222, 206, 135);
+    font-family: 'Cinzel', serif;
+    max-width: 500px;
+    align-items: auto;
+}
+
+.icon {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    transition: backgorund-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+.icon:hover{
+    transform: scale(1.2);
+}
+
+#perfil {
+    max-height: 200px;
+    border-radius: 100px;
+}
+
+.text {
+    color: rgb(43, 44, 41);
+    font-size: bold ;
+}
+
+.interaction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+}
+
+li {
+    
+    font-size: 24px;
+    color: rgb(222, 206, 135);
+    list-style: none;
+    background-color : rgb(56, 90, 56);
+    border-radius: 50px;
+    margin-top: 15px;
+    border: 2px;
+    border-color: rgba(0, 0, 0, 0.493);
+    border-style: solid;
+   
+}
+
+.botoes {
+    
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 80%;
+    text-align: center;
+    transition: backgorund-color 1s ease, color 0.5s ease, transform 0.5s ease;
+   
+}
+
+.botoes:hover{
+    
+    background-color: rgb(39, 78, 39);
+    transform: scale(1.1) ;
+    transform: rotate3d(360);
+}
+
+
+#social-icon{
+    display: inline-block;
+    max-width: 20px;
+    align-items: stretch;
+}
+
+a{
+    text-decoration: none;
+    color:  rgb(222, 206, 135);
+    display: block;
+}

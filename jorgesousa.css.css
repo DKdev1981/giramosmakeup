@@ -5,18 +5,29 @@ margin: 0;
 
 body {
     
-    
-    
-    
+    background-color: #000000;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+
 }
 
 #skelet {
+
+    background-image: url(./jorge-img/WhatsApp\ Image\ 2023-12-15\ at\ 6.29.46\ PM.jpeg);
     text-align: center;
-    background-color: rgb(222, 206, 135);
+    background-color: #ffc0cb94;
     font-family: 'Cinzel', serif;
-    max-width: 500px;
-    align-items: auto;
+    width: 500px;
+    max-width: 550px;
+    height: 800px;
+    display: block;
+    
 }
+
 
 .icon {
     padding-top: 50px;
@@ -28,35 +39,37 @@ body {
 }
 
 #perfil {
-    max-height: 200px;
-    border-radius: 100px;
+    max-height: 250px;
+    border-radius: 200px;
+    padding: 12px;
 }
 
 .text {
     color: rgb(43, 44, 41);
-    font-size: bold ;
+    transition:6s;
+    font-size: 1.6em;
+    display: block;
+    letter-spacing: 5px;
+    margin-bottom: -42px;
+    padding-bottom: 50px;
+
+
+   
+
+
+}
+
+#social-icon1{}
+
+ul{ 
+    
 }
 
 .interaction{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+    max-width: 80%;
+    text-align: center;
+    padding-inline-start: 10%;
     
-}
-
-li {
-    
-    font-size: 24px;
-    color: rgb(222, 206, 135);
-    list-style: none;
-    background-color : rgb(56, 90, 56);
-    border-radius: 50px;
-    margin-top: 15px;
-    border: 2px;
-    border-color: rgba(0, 0, 0, 0.493);
-    border-style: solid;
-   
 }
 
 .botoes {
@@ -64,17 +77,25 @@ li {
     display: block;
     padding-top: 20px;
     padding-bottom: 20px;
-    max-width: 80%;
-    text-align: center;
-    transition: backgorund-color 1s ease, color 0.5s ease, transform 0.5s ease;
+    transition: backgorund-color 0.8s ease, color 0.5s ease, transform 0.5s ease;
+    font-size: 24px;
+    
+    list-style: none;
+    background-color : #ffc0cb94;
+    border-radius: 50px;
+    margin-top: 15px;
+    border: 2px;
+    border-color: rgba(32, 31, 16, 0.541);
+    border-style: solid;
    
 }
 
 .botoes:hover{
     
-    background-color: rgb(39, 78, 39);
+    background-color: rgb(194, 125, 171);
     transform: scale(1.1) ;
-    transform: rotate3d(360);
+    
+    
 }
 
 
@@ -86,6 +107,11 @@ li {
 
 a{
     text-decoration: none;
-    color:  rgb(222, 206, 135);
+    color:  rgb(133, 115, 35);
     display: block;
+   
+}
+
+a:hover{
+    color: rgb(255, 233, 110);
 }

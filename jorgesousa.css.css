@@ -1,31 +1,32 @@
 html {
-padding: 0;
-margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-    
+
     background-color: #000000;
     padding: 0;
     margin: 0;
     position: relative;
     display: flex;
     justify-content: center;
-
+    min-height: 100vh;
 
 }
 
 #skelet {
-
+    
     background-image: url(./jorge-img/WhatsApp\ Image\ 2023-12-15\ at\ 6.29.46\ PM.jpeg);
+    background-size: cover;
     text-align: center;
     background-color: #ffc0cb94;
     font-family: 'Cinzel', serif;
-    width: 500px;
-    max-width: 550px;
-    height: 800px;
+    width: 100%;
+    max-width: 40em;
     display: block;
-    
+    padding-bottom: 0;
+
 }
 
 
@@ -34,7 +35,8 @@ body {
     padding-bottom: 30px;
     transition: backgorund-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
 }
-.icon:hover{
+
+.icon:hover {
     transform: scale(1.2);
 }
 
@@ -46,72 +48,99 @@ body {
 
 .text {
     color: rgb(43, 44, 41);
-    transition:6s;
+    transition: 6s;
     font-size: 1.6em;
     display: block;
     letter-spacing: 5px;
     margin-bottom: -42px;
     padding-bottom: 50px;
-
-
-   
-
-
 }
 
-#social-icon1{}
 
-ul{ 
-    
-}
-
-.interaction{
+.interaction {
     max-width: 80%;
     text-align: center;
     padding-inline-start: 10%;
-    
+
 }
 
 .botoes {
-    
+
     display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    transition: backgorund-color 0.8s ease, color 0.5s ease, transform 0.5s ease;
+    padding:20px;
+    transition: 0.8s ease, color 0.5s ease, 0.5s ease;
     font-size: 24px;
-    
+
     list-style: none;
-    background-color : #ffc0cb94;
+    background-color: #ffc0cb94;
     border-radius: 50px;
     margin-top: 15px;
     border: 2px;
     border-color: rgba(32, 31, 16, 0.541);
     border-style: solid;
-   
+
 }
 
-.botoes:hover{
-    
+.botoes:hover {
+
     background-color: rgb(194, 125, 171);
-    transform: scale(1.1) ;
-    
-    
+    transform: scale(1.1);
+cursor: pointer;
+
 }
 
 
-#social-icon{
+#social-icon {
     display: inline-block;
     max-width: 20px;
     align-items: stretch;
 }
 
-a{
+.interaction a {
     text-decoration: none;
-    color:  rgb(133, 115, 35);
+    color: rgb(133, 115, 35);
     display: block;
-   
+
 }
 
-a:hover{
+.interaction a:hover {
     color: rgb(255, 233, 110);
+}
+
+
+.pe {
+    width: scale(0.8);
+    margin: 60px;
+    margin-bottom: 0;
+display: flex;
+flex-direction: column;
+}
+
+#dev-link{
+    padding-top:20px;
+    padding-bottom:20px;
+    
+    
+}
+.pe #dev-link {
+   
+    align-items: center;
+    text-decoration:none;
+    font-size: 15px;
+    box-decoration-break:slice;
+    cursor:pointer;
+    color:#a7973e;
+   
+border-style:none;
+
+}
+
+.pe #dev-link:hover {
+    border-radius: 50px;
+   border-style: solid;
+    transform: scale(1.09);
+    color: #a7973e;
+   transition: 1s ease, color 1s ease, 1s ease;
+   letter-spacing: 4px;
+   
 }

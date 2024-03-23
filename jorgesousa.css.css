@@ -11,19 +11,19 @@ body {
     position: relative;
     display: flex;
     justify-content: center;
-    min-height: 100vh;
 
+    max-height:  950px;
 }
 
 #skelet {
     
     background-image: url(./jorge-img/WhatsApp\ Image\ 2023-12-15\ at\ 6.29.46\ PM.jpeg);
-    background-size: cover;
+    background-size: 100vh;
     text-align: center;
     background-color: #ffc0cb94;
     font-family: 'Cinzel', serif;
-    width: 100%;
-    max-width: 40em;
+    height: 60em;
+    width: 28em;
     display: block;
     padding-bottom: 0;
 
@@ -33,7 +33,7 @@ body {
 .icon {
     padding-top: 50px;
     padding-bottom: 30px;
-    transition: backgorund-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+    transition:  0.5s ease, color 0.5s ease,  0.5s ease;
 }
 
 .icon:hover {
@@ -48,8 +48,8 @@ body {
 
 .text {
     color: rgb(43, 44, 41);
-    transition: 6s;
-    font-size: 1.6em;
+    transition: 4s;
+    font-size: 1em;
     display: block;
     letter-spacing: 5px;
     margin-bottom: -42px;
@@ -110,7 +110,7 @@ cursor: pointer;
 
 .pe {
     width: scale(0.8);
-    margin: 60px;
+    margin: 40px;
     margin-bottom: 0;
 display: flex;
 flex-direction: column;
@@ -126,7 +126,7 @@ flex-direction: column;
    
     align-items: center;
     text-decoration:none;
-    font-size: 15px;
+    font-size: 13px;
     box-decoration-break:slice;
     cursor:pointer;
     color:#a7973e;
@@ -137,7 +137,7 @@ border-style:none;
 
 .pe #dev-link:hover {
     border-radius: 50px;
-   border-style: solid;
+   border-style: none;
     transform: scale(1.09);
     color: #a7973e;
    transition: 1s ease, color 1s ease, 1s ease;

@@ -12,11 +12,11 @@ body {
     display: flex;
     justify-content: center;
 
-    max-height:  950px;
+    max-height: 950px;
 }
 
-#skelet {
-    
+.skelet-mobile {
+
     background-image: url(./jorge-img/WhatsApp\ Image\ 2023-12-15\ at\ 6.29.46\ PM.jpeg);
     background-size: 100vh;
     text-align: center;
@@ -33,7 +33,7 @@ body {
 .icon {
     padding-top: 50px;
     padding-bottom: 30px;
-    transition:  0.5s ease, color 0.5s ease,  0.5s ease;
+    transition: 0.5s ease, color 0.5s ease, 0.5s ease;
 }
 
 .icon:hover {
@@ -67,7 +67,7 @@ body {
 .botoes {
 
     display: block;
-    padding:20px;
+    padding: 20px;
     transition: 0.8s ease, color 0.5s ease, 0.5s ease;
     font-size: 24px;
 
@@ -85,7 +85,7 @@ body {
 
     background-color: rgb(194, 125, 171);
     transform: scale(1.1);
-cursor: pointer;
+    cursor: pointer;
 
 }
 
@@ -112,35 +112,122 @@ cursor: pointer;
     width: scale(0.8);
     margin: 40px;
     margin-bottom: 0;
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
-#dev-link{
-    padding-top:20px;
-    padding-bottom:20px;
-    
-    
+#dev-link {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+
 }
+
 .pe #dev-link {
-   
+
     align-items: center;
-    text-decoration:none;
+    text-decoration: none;
     font-size: 13px;
-    box-decoration-break:slice;
-    cursor:pointer;
-    color:#a7973e;
-   
-border-style:none;
+    box-decoration-break: slice;
+    cursor: pointer;
+    color: #a7973e;
+    border-style: none;
 
 }
 
 .pe #dev-link:hover {
     border-radius: 50px;
-   border-style: none;
+    border-style: none;
     transform: scale(1.09);
     color: #a7973e;
-   transition: 1s ease, color 1s ease, 1s ease;
-   letter-spacing: 4px;
-   
+    transition: 1s ease, color 1s ease, 1s ease;
+    letter-spacing: 4px;
+
+}
+
+.skelet-desktop {
+    display: none;
+}
+
+
+@media screen and (min-width: 650px) and (orientation: landscape) {
+    .skelet-mobile {
+        display: none;
+    }
+
+    .skelet-desktop {
+        display: block;
+        background-image: linear-gradient(to bottom right, #f8eaea, #f0d8db 60%, #ca9ca493);
+        text-align: center;
+        background-color: #ffc0cb94;
+        font-family: 'Cinzel', serif;
+        height: 100vw;
+        width: 100vw;
+        padding-bottom: 0;
+    }
+
+
+    .header {
+        height: 100px;
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        /* grid: repeat(1, 80px) / auto-flow 80px; */
+        grid-gap: 50px;
+        background-color: #fee3ae, #e0b87e;
+    }
+
+
+    .icon {
+        display: inline-flex;
+
+        padding-top: 0px;
+        padding-bottom: 0px;
+        grid-row:1;
+
+        /* transition: 0.5s ease, color 0.5s ease, 0.5s ease; */
+    }
+
+    .icon:hover {
+        transform: none;
+    }
+
+    #perfil {
+        max-height: 100px;
+        border-radius: 18px;
+        padding: 8px;
+    }
+
+    .text {
+        width: 21vw;
+        height:80%;
+        color: rgb(43, 44, 41);
+        transition: 4s;
+        font-size: 1em;
+        display: inline-flex;
+        letter-spacing: 5px;
+        padding: 10px;
+        align-items: center;
+        grid-row:1;
+        overflow: hidden;
+    }
+
+
+    .interaction {
+        display: inline-flex;
+        list-style: none;
+        grid-gap: 30px;
+        grid-area: 1;
+        align-items: center;
+    }
+
+    #botoes {
+        background-color: #f8eaea, #f0d8db 60%;
+        border-radius: 0;
+        border: 20px;
+        border-color: #000000;
+    }
+    #botoes :hover {
+        background-color: #f8eaea;
+        transform: scale(0.9)
+    }
 }
